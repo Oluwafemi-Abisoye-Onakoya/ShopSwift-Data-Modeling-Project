@@ -15,4 +15,4 @@ This project contains the conceptual and logical data model design for an online
 ## Tools Used
 - draw.io (ERD Design)
 - Markdown (Documentation)
-- SQL (Optional DDL)
+- SQL
