@@ -7,12 +7,12 @@ The star schema seems like an excellent choice for shopSwift retail analytics ho
 
 As ShopSwift grows, the FactSales table will accumulate a massive amount of data. This can lead to: 	
 
-- Slow Query Performance: Even with a star schema, extremely large fact tables can become slow without proper indexing, partitioning, and potentially distributed database solutions.
+- Slow Query Performance: Extremely large fact tables can become slow without proper indexing, partitioning, and potentially distributed database solutions.
   
 - Storage Costs: Storing petabytes of sales data can be expensive.
 
 
- # Dimension Table Volatility (SCD Type 2): 
+ # Dimension Table Volatility (Slowly changing dimensions Type 2): 
  
  If dimension attributes change frequently (e.g., a product's name or a customer's address), handling these changes (Slowly Changing Dimensions - SCD Type 2) can add complexity to the ETL process and increase the size of dimension tables.
  
@@ -37,7 +37,7 @@ With more data and more sources, maintaining data quality, consistency, and gove
 As the number of users and analytical queries increases, there can be contention for database resources (CPU, memory, I/O), leading to performance bottlenecks.
 
 
-# Technology Stack Limitations: 
+# Stack/Storage Limitations: 
 
 While relational databases can handle significant scale, extremely large datasets might eventually push towards more specialized data warehousing solutions (e.g., cloud data warehouses like Snowflake, BigQuery, Redshift) or even data lakes for raw data storage.
 
